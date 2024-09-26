@@ -25,10 +25,10 @@ function output_warning() {
   echo -e "${spacing} \e[31m$1\e[0m"
 }
 
-function output_stderr() { 
+function output_stderr() {
   # Outputs to stderr in case it is inside a function so it does not
   # disturb the return value. Useful for debugging.
-  echo "$@" 1>&2; 
+  echo "$@" 1>&2;
 }
 
 
@@ -102,7 +102,7 @@ function export_mix_env() {
 }
 
 function check_stack() {
-  if [ "${STACK}" != "heroku-16" ] && [ "${STACK}" != "heroku-18" ] && [ "${STACK}" != "heroku-20" ]; then
+  if [ "${STACK}" != "heroku-16" ] && [ "${STACK}" != "heroku-18" ] && [ "${STACK}" != "heroku-20" ] && [ "${STACK}" != "heroku-24" ]; then
     echo "ERROR: the current stack is not supported, upgrade your stack to continue"
     exit 1
   fi
