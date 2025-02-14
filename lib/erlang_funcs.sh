@@ -1,5 +1,5 @@
 function download_erlang() {
-  erlang_package_url="https://github.com/elixir-buildpack/heroku-otp/releases/download"
+  erlang_package_url="https://github.com/AashishChakravarty/heroku-otp/releases/download"
   erlang_package_url="${erlang_package_url}/${erlang_version}/${STACK}.tar.gz"
 
   # If a previous download does not exist, then always re-download
